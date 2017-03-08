@@ -1,189 +1,120 @@
 <!doctype html>
-
-
-
 <html>
 
-
-
 <head>
-
-<title>MentorApp</title>
-
-<meta charset="utf-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link href="/css/bootstrap.min.css" rel="stylesheet">
-
-<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-
-<link href="/css/introHCI.css" rel="stylesheet">
-
-<script src="https://code.jquery.com/jquery.js"></script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-
+  <title>MentorMe</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="/css/introHCI.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 
 
 
 <body>
-
-<div class="jumbotron">
-
-<a href="/"><img class="img"></a>
-
-<h1>MentorApp</h1>
-
-<p>Find a Mentor &middot; Find a Mentee </p>
-
-</div>
-
-<div class="dropdown">
-
-<h1 class="header">I am looking for a...<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select<span class="caret"></span></button>
-
-  <ul class="dropdown-menu" id="select">
-
-    <li><a href="#" id="mentor">Mentor</a></li>
-
-    <li><a href="#" id="mentee">Mentee</a></li>
-
-  </ul>
-
-</h1>
-
-</div>
-
-<br>
-
-
-
-<div class="container">
-
-
-
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval ="false">
-
-    <!-- Indicators -->
-
-    <ol class="carousel-indicators">
-
-      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-
-      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-
-      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-
-      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-
-      <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-
-      <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-
-     <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-
-     <li data-target="#carousel-example-generic" data-slide-to="7"></li>
-
-    </ol>
-
-
-
-    <!-- Wrapper for slides -->
-
-
-
-    <div class="carousel-inner" role="listbox">
-
-{{#each matchesList}}
-
-      <div class="item">
-<div class="card" id="carouselCard">
-<div class="avatar" style="float:left">
-  <a href="project/{{name}}" class="thumbnail"><img src="{{image}}" alt="" /></a>
+  <div class="jumbotron">
+    <a href="/"><img class="img"></a>
+    <h1>MentorMe</h1>
+    <p>Find a Mentor &middot; Find a Mentee </p>
   </div>
 
-    <div class="content">
-          <a href="project/{{name}}" class="thumbnail">
-                  <font color="black"><h3>{{name}}</h3></font>
-                    <p>Web Developer <br>
-                      {{major}}</p></a>
-                <p><a href="messages/viewmessages/{{name}}" class="btn btn-default center-block">Message</a></p>
+<!-- DROPDOWN STARTS -->
+<div class="dropdown">
+  <h1 class="header">I am looking for a...<button class="btn btn-default dropdown-toggle" id="selectBtn" type="button" data-toggle="dropdown"><font size="3"color="black">Select</font><span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#" id="mentor" onclick="displayMentors();">Mentor</a></li>
+    <li><a href="#" id="mentee" onclick="displayMentees();">Mentee</a></li>
+  </ul>
+</h1>
+</div>
+<!-- DROPDOWN ENDS -->
 
-<br>
+  <br>
 
-<div class="description" style="float:left">
-<a href="project/{{name}}" class="thumbnail">
-<font color="black"><p>{{description}}</p></font></a>
+  <div class="container">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval ="false">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+      </ol>
 
-                </div>
-
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        {{#each matchesList}}
+        <div class="item">
+          <div class="card" id="carouselCard">
+            <div class="avatar" style="float:left">
+              <a href="project/{{name}}" class="thumbnail"><img src="{{image}}" alt="" /></a>
             </div>
+            <div class="content">
+              <a href="project/{{name}}" class="thumbnail">
+                <font color="black"><h3>{{name}}</h3></font>
+                <p>Web Developer <br>
+                  {{major}}</p></a>
+                  <p><a href="messages/viewmessages/{{name}}" class="btn btn-default center-block">Message</a></p>
+                  <br>
+                  <div class="description" style="float:left">
+                    <a href="project/{{name}}" class="thumbnail">
+                      <font color="black"><p>{{description}}</p></font></a>
+                  </div>
+            </div>
+          </div>
+        </div>
+        {{/each}}
+
+
+
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+        </a>
 
       </div>
-
-</div>
-
-{{/each}}
-
-
-
-<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-
-      <span class="sr-only">Previous</span>
-
-    </a>
-
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-
-      <span class="sr-only">Next</span>
-
-    </a>
-
+    </div>
   </div>
 
 
 
-</div>
+        <!-- NAV STARTS HERE -->
 
+        <div id="nav">
 
+          <li><img src="../images/backarrow.png" alt="Back image" class="backimg"></li>
+          <li><a href="/"><img src="images/homeicon.png" alt="Home image" class="homeimg"></a></li>
 
-</div>
+          <li><a href="messages/"><img src="images/messageIcon.png" alt="Message image" class="mailimg"></a></li>
 
+          <li><a href="settings/"><img src="images/settings.png" alt="Settings image" class="settingsimg"></a></li>
 
+          <li><a href="FAQ/">FAQ</a></li>
 
-<!-- NAV STARTS HERE -->
+        </div>
 
-<div id="nav">
-
-<li><img src="../images/backarrow.png" alt="Back image" class="backimg"></li>
-<li><a href="/"><img src="images/homeicon.png" alt="Home image" class="homeimg"></a></li>
-
-<li><a href="messages/"><img src="images/messageIcon.png" alt="Message image" class="mailimg"></a></li>
-
-<li><a href="settings/"><img src="images/settings.png" alt="Settings image" class="settingsimg"></a></li>
-
-<li><a href="FAQ/">FAQ</a></li>
-
-</div>
-
-<!-- NAV ENDS HERE -->
+        <!-- NAV ENDS HERE -->
 
 
 
 
 
-<script src="/js/introHCI.js"></script>
+        <script src="/js/introHCI.js"></script>
 
-</body>
+      </body>
 
-</html>
+      </html>
 
 

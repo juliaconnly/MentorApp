@@ -51,7 +51,7 @@ body {
 }
 
 .jumbotron {
-/*     background-image: url(../images/jumbologo.jpg);*/
+/*     background-image: url(../images/jumbologo.png);*/
 	background-color: #a5bcd9;
      position: relative;
      padding: 10px;
@@ -180,7 +180,7 @@ form .line {
 
 
 .jumbotron img{
-     content:url(../images/logo.jpg);
+     content:url(../images/logo.png);
      position: absolute;
      left: 0px;
      height: 100px;
@@ -458,8 +458,9 @@ span.psw {
 
 /*CAROUSEL CSS*/
 .carousel-inner{
-
-height: 280px;
+margin-top: 10px;
+margin-bottom: 10px;
+/*height: 280px;*/
 
 border-radius: 25px;
 
@@ -486,8 +487,9 @@ background-color: #FFFFFF;
 
 
 .carouselCard {
-
-height: 260px;
+margin-top: 10px;
+margin-bottom: 10px;
+/*height: 260px;*/
 
 }
 
