@@ -1,8 +1,7 @@
 {
-	
+
 	"sentList":
 	[
-		{"receiver": "Kaila Lee", "message": "Hey!"},
-		{"receiver": "Julia Connly", "message": "I'm well!"}
+		{"receiver": "Kaila Lee", "message": "Hey there!"}
 	]
 }

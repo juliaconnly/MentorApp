@@ -3,7 +3,7 @@
 <html>
 
 <head>
-	<title>MentorMe</title>	
+	<title>HCI Project Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -15,38 +15,38 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->        
+    <![endif]-->
 
 </head>
 
 <body>
-		<div class="jumbotron">
-			<a href="/"><img alt="Message image" class="img"></a>
-			<h1>MentorMe</h1>
-			<p>Find a Mentor &middot; Find a Mentee</p>
-		</div>
+	<div class="jumbotron" id="indexJumbo">
+		<a href="/"><img class="img" id="logoImg"></a>
+		<center><h4>MentorMe</h4></center>
+		<center><p>Find a Mentor &middot; Find a Mentee </p></center>
+	</div>
+	<br>
 
-		<center><h2>FAQ</h2></center>
-		<div class="container-FAQ"> 
-		<div class="dropdown" id="FAQdrop">
-			<button class="btn btn-default dropdown-toggle" id="menu1" type="button" data-toggle="dropdown" onclick="renderQ1()"><b>What is the purpose of MentorMe?</b>
-			<span class="caret"></span></button>
-			<ul class="dropdown-menu" id="drop1">
-				<p id="answer1"></p>
-			</ul>
-		</div>
-	</br>
+		<center><h4>FAQ</h4></center>
+		<div class="container">
+			<p class="accordion">What is the purpose of MentorMe?</p>
+			<div class="panel">MentorMe is a mobile app that provides users
+				the opportunity to connect with those in their professional network
+				and exchange career-related advice and aspirations.
+			</div>
+			<p class="accordion">How are users matched?</p>
+			<div class="panel">Users are matched with a mentor or mentee in their
+				professional field based on their user preferences.
+			</div>
+			<p class="accordion">Who can use MentorMe?</p>
+			<div class="panel">Anyone is welcome to create a profile and start connecting!
+			</div>
+			<p class="accordion">What makes MentorMe unique?</p>
+			<div class="panel">MentorMe connects aspiring professionals with a mentor and
+				experience professionals with mentees through creating a platform for their
+				interaction and direct communication.
+			</div>
 
-
-		<div class="dropdown" id="FAQdrop">
-			<button class="btn btn-default dropdown-toggle" id="menu2" type="button" data-toggle="dropdown" onclick="renderQ2()"><b>Who can use MentorMe?</b>
-			<span class="caret"></span></button>
-			<ul class="dropdown-menu" id="drop2">
-				<p id="answer2">""</p>
-			</ul>
-		</div><br>
-</div>
-		
 
 
 <!-- NAV STARTS HERE -->
@@ -64,6 +64,11 @@
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/introHCI.js"></script>
+	<script src="/js/messageNotif.js"></script>
 	<script src="/js/faq.js"></script>
+
+
+
+
 </body>
 </html>

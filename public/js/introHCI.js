@@ -11,17 +11,18 @@ var choice;
  */
 function initializePage() {
 	// add any functionality and listeners you want here
+	console.log("Here");
 	$('.backimg').click(back);
-	$('#submitBtn').click(sendMessage);
+	// $('#submitBtn').click(sendMessage);
 	//$('#submitBtn').click(timeStamp);
 	$('#saveBtn').click(addMajor);
 	$('#saveBtn').click(addName);
 	$('#saveBtn').click(addDescription);
-	$('#message').keypress(function(e) {
-		if (e.which == 13) {
-			sendMessage(e);
-		}
-	});
+	// $('#message').keypress(function(e) {
+	// 	if (e.which == 13) {
+	// 		sendMessage(e);
+	// 	}
+	// });
 	$('.FAQdrop').click(addFAQDetails);
 	$('.form-horizontal').submit(function(e) {
 		e.preventDefault();
@@ -45,20 +46,20 @@ function addFAQDetails(e){
 	$get("/FAQ/" + idNumber, callBackFn);
 }
 
-function sendMessage(e) {
-	e.preventDefault();
-
-	var receiver = $("h5").html();
-	var message = $("#message").val();
-	if (message == "") {
-		console.log("No message entered!");
-		return;
-	} else {
-		$("#myMessage").append("<br/>" + $("#message").val());
-	}
-
-	document.getElementById("message").value = "";
-}
+// function sendMessage(e) {
+// 	e.preventDefault();
+//
+// 	var receiver = $("h5").html();
+// 	var message = $("#message").val();
+// 	if (message == "") {
+// 		console.log("No message entered!");
+// 		return;
+// 	} else {
+// 		$("#myMessage").append("<br/>" + $("#message").val());
+// 	}
+//
+// 	document.getElementById("message").value = "";
+// }
 
 function addMajor(e) {
 	e.preventDefault();
@@ -105,7 +106,7 @@ function displayMentees() {
  //  $.get("/data.json", function(result){
  //    console.log(result);
  //    // array = result;
- //    for (var i = 0; i < result.length; i++) { 
+ //    for (var i = 0; i < result.length; i++) {
  //    console.log("hi");
  //  }
  //  });
@@ -121,7 +122,7 @@ function callBackFn(result) {
 		$("#1.card").hide();
 	} else {
 		$("#0.card").hide();
-		$("#1.card").show();		
+		$("#1.card").show();
 	}
 }
 
@@ -155,5 +156,3 @@ function timeStamp() {
 //     console.log("yes");
 //     e.preventDefault();// prevent the default anchor functionality
 // });
-
-

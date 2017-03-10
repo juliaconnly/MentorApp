@@ -2,7 +2,7 @@
 
 <html>
 <head>
-  <title>MentorMe</title>  
+  <title>HCI Project Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -10,40 +10,21 @@
   <link href="/css/introHCI.css" rel="stylesheet">
   <!-- this is a comment in HTML -->
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->        
 </head>
 
 <body>
-    <div class="jumbotron">
-<li><a href=""><img src="../images/messageIcon.png" alt="Message image" class="mailimg"></a></li>
-      <h1>MentorMe</h1>
-      <p>Find a Mentor &middot; Find a Mentee </p>
-    </div>
+  <div class="jumbotron" id="indexJumbo">
+    <a href="/"><img class="img" id="logoImg"></a>
+    <center><h4>MentorMe</h4></center>
+    <center><p>Find a Mentor &middot; Find a Mentee </p></center>
+  </div>
 
    <div class="container">
-    <center><img src="../images/messageIcon.png" alt="Message image" class="mailimg"></center>
-  <!-- SEND MESSAGE OPTION - LAB 5 FOR REFERENCE
-  <form id="addFriendForm" role="form" method="get" action="/add">
-    <h3>Send a Message</h3>
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" class="form-control" id="name" placeholder="Name" name="name">
-      </div>
-      <div class="form-group">
-        <label for="description">Message:</label>
-        <input type="text" class="form-control" id="description" placeholder="Message" name="description">
-      </div>
-      <input type="submit" id="submitBtn" class="btn btn-default" value="Send Message"></input>
-  </form> -->
-  
+    <center><img src="../images/messageIcon.png" alt="Message image" class="mailimg_main"></center>
+
   {{#each messagesList}}
-  <div class="project" id={{name}}>
-    <a href="viewmessages/{{name}}" class="thumbnail">
+  <div class="project clearfix" id={{name}}>
+    <a href="viewmessages/{{name}}" class="thumbnail" id="inbox">
       <img src="{{image}}" class="profilepic" style="float:left">
       <p id="messageName">{{name}}</p>
       <p id="messageM">{{message}}</p>
@@ -71,6 +52,8 @@
   <script src="/js/bootstrap.min.js"></script>
   <script src="/js/introHCI.js"></script>
   <script src="/js/messages.js"></script>
+
+
 
 </body>
 </html>
