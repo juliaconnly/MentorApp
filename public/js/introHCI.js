@@ -118,11 +118,11 @@ function displayMentees() {
 
 function callBackFn(result) {
 	if (choice == 0) {
-		$("#0.card").show();
-		$("#1.card").hide();
+		$("#0.choice").show();
+		$("#1.choice").hide();
 	} else {
-		$("#0.card").hide();
-		$("#1.card").show();
+		$("#0.choice").hide();
+		$("#1.choice").show();		
 	}
 }
 
