@@ -282,6 +282,10 @@ and (max-device-width : 480px) {
  bottom:0px;
 }
 
+.faqNav {
+  width: 100%;
+}
+
 .title
  {
  color:#EDEDED;

@@ -13,11 +13,15 @@ var index = require('./routes/index');
 // var user = require('./routes/user');
 var project = require('./routes/project');
 var messages = require('./routes/messages');
+var messages2 = require('./routes/messages2');
+var sentMessages = require('./routes/sentMessages');
 var viewmessages = require('./routes/viewmessages');
 var FAQ = require('./routes/FAQ');
 var settings = require('./routes/settings');
 var login = require('./routes/login');
 var carousel = require('./routes/carousel');
+var bodyParser = require('body-parser');
+var jsonParser = bodyParser.json();
 
 var app = express();
 
@@ -46,13 +50,15 @@ app.get('/', index.view);
 // Example route
 // app.get('/users', user.list);
 app.get('/project/:name', project.viewProject);
-app.get('/messages', messages.viewMessages);
 app.get('/messages/viewmessages/:name', viewmessages.viewViewmessages);
 app.get('/FAQ', FAQ.viewFAQ);
 app.get('/settings', settings.viewSettings);
 app.get('/login', login.viewLogin);
 app.get('/carousel', carousel.viewCarousel);
-
+app.get('/messages', messages.viewMessages);
+app.get('/messages2', messages2.viewMessages);
+app.post('/messages2', messages2.editMessages);
+app.get('/sentMessages', sentMessages.viewMessages);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
