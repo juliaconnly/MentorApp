@@ -1,3 +1,4 @@
+@import url('http://fonts.googleapis.com/css?family=Bitter');
 /* applies to anything of class "example-class-selector" */
 .example-class-selector {
   margin-top: 2em;
@@ -23,13 +24,21 @@ body {
   font-size: 18px;
   padding-left: 30px;
   padding-top: 0px;
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: "Bitter", serif;
   color: #787474;
+}
+
+.h4 {
+  font-family: "Bitter", serif;
+}
+
+.tagline {
+  font-family: "Bitter", serif;
 }
 
 .mymessage {
      left:0;
-     color: #a5bcd9 ;
+     color: #000000 ;
      position: right;
 }
 
@@ -202,6 +211,9 @@ form .line {
 
 .jumbotron h4 {
      padding: 0px;
+     font-family: "Bitter", serif;
+     font-weight: bold;
+     font-size: 25px;
 }
 
 .jumbotron p {
@@ -272,18 +284,30 @@ and (max-device-width : 480px) {
 }
 
 
+
 #nav
  {
  background-color: #a5bcd9;
  width:100%;
  height:50px;
- box-shadow: 0px 1px 50px #5E5E5E;
+/* box-shadow: 0px 1px 50px #5E5E5E;*/
  position:fixed;
  bottom:0px;
 }
 
 .faqNav {
   width: 100%;
+}
+
+#myTopnav {
+   background-color: #a5bcd9;
+ width:100%;
+ height:50px;
+/* box-shadow: 0px 1px 50px #5E5E5E;*/
+ position:fixed;
+ top:0px;
+font-family: "Bitter", serif;
+/* padding: 20px;*/
 }
 
 .title
@@ -443,6 +467,44 @@ img.avatar {
     overflow: scroll;
 }
 
+#indexContainer {
+  margin-bottom: 60px;
+}
+
+#viewContainer {
+  background-color: #E5E4E4;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+        overflow: scroll;
+}
+
+#projectContainer {
+      margin-bottom: 80px;
+        overflow: scroll;
+}
+
+#myChat {
+    background-color: #FFFFFF;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 15px;
+  margin-left: 150px;
+
+}
+
+#theirChat {
+    background-color: #FFFFFF;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 15px;
+  margin-right: 150px;
+}
+
 /* The "Forgot password" text */
 span.psw {
     float: left;
@@ -565,6 +627,7 @@ p.accordion {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 5px;
+  font-family: "Bitter", serif;
 }
 
 p.accordion.active, p.accordion:hover {
@@ -597,4 +660,60 @@ div.panel.show {
   opacity: 1;
   max-height: 500px;
 }
+
+.info {
+  font-family: "Bitter", serif;
+  background-color: #eee;
+  width: 100%;
+  padding: 18px;
+}
+
+/*.myProfile {
+  left: 0;
+}*/
+
+.newMessage {
+  height: 30px;
+  width: 30px;
+  float: right;
+  margin-right: 20px;
+
+}
+
+button.link {
+  background: none;
+  border: none;
+  color: blue;
+  font-size: 14px;
+  height: 10px;
+  width: 30px;
+  right: 0;
+  float: left;
+}
+
+.sendList {
+  height: auto;
+  width: auto;
+}
+
+.profilepic2 {
+  height: 45px;
+  width: auto;
+  float: left;
+}
+
+#toBox {
+  height: 30px;
+  margin: 0px;
+  border: 1px;
+  border-style: solid;
+  border-color: #F$FEF9F9;
+  text-indent: 20px;
+  font-size: 15px;
+}
+
+/*.information {
+  position: absolute;
+  top: 30%;
+}*/
 

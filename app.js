@@ -12,6 +12,7 @@ var index = require('./routes/index');
 // Example route
 // var user = require('./routes/user');
 var project = require('./routes/project');
+var myProject = require('./routes/myProject');
 var messages = require('./routes/messages');
 var messages2 = require('./routes/messages2');
 var sentMessages = require('./routes/sentMessages');
@@ -59,6 +60,8 @@ app.get('/messages', messages.viewMessages);
 app.get('/messages2', messages2.viewMessages);
 app.post('/messages2', messages2.editMessages);
 app.get('/sentMessages', sentMessages.viewMessages);
+app.get('/myProject', myProject.viewProject);
+app.post('/myProject', myProject.addProject);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

@@ -32,17 +32,6 @@
 
   <div class="container" id="projectContainer">
 
-
-   <script>
-    var cnt=0;
-    function CountFun(){
-     cnt=parseInt(cnt)+parseInt(1);
-     var divData=document.getElementById("showCount");
-     divData.innerHTML="Stars: "+cnt +"";
-    }
-   </script>
-
-
     <div class="avatar" id="projectAvatar">
         <img src="http://lorempixel.com/400/400/people" alt="" style="float:left"/>
     </div>
@@ -52,16 +41,17 @@
 <h6>{{college}}</h6></center>
 
   </br>
-  <center class="starCount">
-   <a href="#" class="btn btn-default" id="yellowStar" onclick="CountFun();"><img src="../images/star.png" width="30" height="30"> </a>
-   <div id="showCount">Stars:</div>
- </center>
 
-<br>
-<div class="container">
+</br>
+<div class="container2" style="width:auto top:40%">
+</br>
+</br>
+</br>
+</br>
   <div class="info">
     <h7 class="summary">Summary</h7></div>
 <br>
+</div>
 <p>{{summary}}</p>
 
 <br>
@@ -72,44 +62,11 @@
   </div>
 
 
-<a href="/messages/viewmessages/{{projectName}}" class="btn btn-default center-block">Message {{projectName}}</a>
-
-</div>
-<!--
-    <div class="row">
-      <div class="col-md-6">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>User</td>
-              <th>Salient need</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Schoolteacher</td>
-              <td>Wants to know what music students are listening to so he can integrate it into his lessons.</td>
-            </tr>
-            <tr>
-              <td>Student 5th grade</td>
-              <td>Desire to be seen as a tastemaker for her friends. Hears about new music from older sister in middle school.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="col-md-6">
-        <img src="http://lorempixel.com/g/520/150/technics" alt="Lorem Pixel image" class="img">
-      </div>
-    </div>
-
-    <p>Sed vitae ultricies magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce pulvinar sapien eget lacus volutpat suscipit. Duis bibendum condimentum sapien, quis vulputate turpis ultricies sit amet. Quisque sollicitudin vitae ipsum vel scelerisque. Aliquam facilisis eros eros, in ultricies erat aliquam nec. Suspendisse nec egestas arcu. Sed nec malesuada turpis. Proin eu lorem sed mauris bibendum consectetur sit amet mattis arcu. Aliquam porta ligula in nulla ullamcorper, at pulvinar diam porta.</p>
- -->
- <!--    <p><a href="index.html">Back &raquo;</a></p> -->
-
 
 
 <!-- View my Profile for Nav BAr
-<a href="../myProject/"><img alt="Profile image" class = "img" id="myProfile"></a> -->
+<a href=""><img alt="Profile image" class = "img" id="myProfile"></a> -->
+
 <!-- NAV STARTS HERE -->
 <div id="nav">
 
@@ -128,8 +85,6 @@
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/introHCI.js"></script>
     <script src="/js/messageNotif.js"></script>
-    <script src="/js/projects.js"></script>
-
 
 
   </body>

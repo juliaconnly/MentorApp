@@ -1,22 +1,88 @@
-{
-	
-	"matchesList":
-	[
-		{"name": "John Doe", "image": "http://lorempixel.com/400/400/people", "major": "Cognitive Science B.S.", "status": "0", 
-		"description": "My group's research tools harvest and synthesize examples to empower more people to design, program, learn, and create. Our experiments and research systems leverage real-world, web-scale usage to create practical theories for design."},
-		{"name": "Jane Doe", "image": "http://lorempixel.com/400/400/people", "major": "Computer Science", "status": "0", 
-		"description": "I am an Associate Professor of Cognitive Science and Computer Science & Engineering at UC San Diego, where I am a co-founder and co-director of the Design Lab."},
-		{"name": "Kaila Lee", "image": "http://lorempixel.com/400/400/people", "major": "Computer Science", "status": "1", 
-		"description": "I am an Associate Professor of Cognitive Science and Computer Science & Engineering at UC San Diego, where I am a co-founder and co-director of the Design Lab."},
-		{"name": "Jenn Chan", "image": "http://lorempixel.com/400/400/people", "major": "Computer Science", "status": "1", 
-		"description": "I am an Associate Professor of Cognitive Science and Computer Science & Engineering at UC San Diego, where I am a co-founder and co-director of the Design Lab."},
-		{"name": "Julia Connly", "image": "http://lorempixel.com/400/400/people", "major": "Computer Science", "status": "1", 
-		"description": "My group's research tools harvest and synthesize examples to empower more people to design, program, learn, and create. Our experiments and research systems leverage real-world, web-scale usage to create practical theories for design."},
-		{"name": "Kobe Bryant", "image": "http://lorempixel.com/400/400/people", "major": "Computer Science", "status": "0", 
-		"description": "I am an Associate Professor of Cognitive Science and Computer Science & Engineering at UC San Diego, where I am a co-founder and co-director of the Design Lab."},
-		{"name": "Ellen Degeneres", "image": "http://lorempixel.com/400/400/people", "major": "Computer Science", "status": "0", 
-		"description": "My group's research tools harvest and synthesize examples to empower more people to design, program, learn, and create. Our experiments and research systems leverage real-world, web-scale usage to create practical theories for design."},
-		{"name": "Steph Curry", "image": "http://lorempixel.com/400/400/people", "major": "Computer Science", "status": "0", 
-		"description": "My group's research tools harvest and synthesize examples to empower more people to design, program, learn, and create. Our experiments and research systems leverage real-world, web-scale usage to create practical theories for design."}
-	]
+{  
+   "matchesList":[  
+      {  
+         "name":"John Doe",
+         "image":"https://3.bp.blogspot.com/-V5ftoTq0Mc0/VzILss6SWsI/AAAAAAAAA6k/JFD0HOK1Wwsx-nE6b4t0MtVBzG-db3HjACLcB/s1600/2015-12-15_Daniel_Chai_023.jpg",
+         "major":"Cognitive Science B.S.",
+         "college": "University of California, San Diego",
+         "status":"0",
+         "summary": "Passionate and driven professional dedicated to raising awareness in the agriculture industry.  Over 10 years of experience in the industry looking to expand and educate others about opportunities in the field.",
+         "description":"My group's research tools harvest and synthesize examples to empower more people to design, program, learn, and create. Our experiments and research systems leverage real-world, web-scale usage to create practical theories for design."
+      },
+      {  
+         "name":"Jane Doe",
+         "image":"https://static01.nyt.com/images/2014/11/13/business/four-women-ceos-slide-SZ3E/four-women-ceos-slide-SZ3E-tmagSF-v3.png",
+         "major":"Computer Science",
+         "college": "University of California, San Diego",
+         "status":"0",
+         "summary": "Passionate and driven professional dedicated to raising awareness in the agriculture industry.  Over 10 years of experience in the industry looking to expand and educate others about opportunities in the field.",
+         "description":"I am an Associate Professor of Cognitive Science and Computer Science & Engineering at UC San Diego, where I am a co-founder and co-director of the Design Lab."
+      },
+      {  
+         "name":"Kaila Lee",
+         "image":"https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAATeAAAAJDA1NmQzOWI4LTVlN2YtNDhmZC1iZWMzLWU0MjgzMDc1ZWIyMw.jpg",
+         "major":"Computer Science",
+         "college": "University of California, San Diego",
+         "status":"1",
+         "summary": "Passionate and driven professional dedicated to raising awareness in the agriculture industry.  Over 10 years of experience in the industry looking to expand and educate others about opportunities in the field.",
+         "description":"I am an Associate Professor of Cognitive Science and Computer Science & Engineering at UC San Diego, where I am a co-founder and co-director of the Design Lab."
+      },
+      {  
+         "name":"Jenn Chan",
+         "image":"https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAW7AAAAJDkwODNhM2Y4LTM5NTAtNDE5Zi1hNTAxLTc3N2Y0MzhlNTBmYw.jpg",
+         "major":"Computer Science",
+         "college": "University of California, San Diego",
+         "status":"1",
+         "summary": "Passionate and driven professional dedicated to raising awareness in the agriculture industry.  Over 10 years of experience in the industry looking to expand and educate others about opportunities in the field.",
+         "description":"I am an Associate Professor of Cognitive Science and Computer Science & Engineering at UC San Diego, where I am a co-founder and co-director of the Design Lab."
+      },
+      {  
+         "name":"Julia Connly",
+         "image":"https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/2/005/085/212/0848072.jpg",
+         "major":"Computer Science",
+         "college": "University of California, San Diego",
+         "status":"1",
+         "summary": "Passionate and driven professional dedicated to raising awareness in the agriculture industry.  Over 10 years of experience in the industry looking to expand and educate others about opportunities in the field.",
+         "description":"My group's research tools harvest and synthesize examples to empower more people to design, program, learn, and create. Our experiments and research systems leverage real-world, web-scale usage to create practical theories for design."
+      },
+      {  
+         "name":"Kobe Bryant",
+         "image":"http://net.archbold.k12.oh.us/ahs/web_class/Spring_11/LALakers_WyseB/Images/Kobe%20Bryant1.jpg",
+         "major":"Computer Science",
+         "college": "University of California, San Diego",
+         "status":"0",
+         "summary": "Passionate and driven professional dedicated to raising awareness in the agriculture industry.  Over 10 years of experience in the industry looking to expand and educate others about opportunities in the field.",
+         "description":"I am an Associate Professor of Cognitive Science and Computer Science & Engineering at UC San Diego, where I am a co-founder and co-director of the Design Lab."
+      },
+      {  
+         "name":"Ellen Degeneres",
+         "image":"http://hgtvhome.sndimg.com/content/dam/images/hgtv/editorial/profiles/talent/ellen-degeneres/hgtv-avatar-talent-ellen-degeneres-3.jpg.rend.hgtvcom.616.616.jpeg",
+         "major":"Computer Science",
+         "college": "University of California, San Diego",
+         "status":"0",
+         "summary": "Passionate and driven professional dedicated to raising awareness in the agriculture industry.  Over 10 years of experience in the industry looking to expand and educate others about opportunities in the field.",
+         "description":"My group's research tools harvest and synthesize examples to empower more people to design, program, learn, and create. Our experiments and research systems leverage real-world, web-scale usage to create practical theories for design."
+      },
+      {  
+         "name":"Steph Curry",
+         "image":"https://az616578.vo.msecnd.net/files/responsive/cover/main/desktop/2016/05/15/635989279751597688-871060012_curry.jpeg",
+         "major":"Computer Science",
+         "college": "University of California, San Diego",
+         "status":"0",
+         "summary": "Passionate and driven professional dedicated to raising awareness in the agriculture industry.  Over 10 years of experience in the industry looking to expand and educate others about opportunities in the field.",
+         "description":"My group's research tools harvest and synthesize examples to empower more people to design, program, learn, and create. Our experiments and research systems leverage real-world, web-scale usage to create practical theories for design."
+      }
+   ],
+   "myData":
+   [
+   	 {  
+         "name":"John Doe",
+         "image":"https://3.bp.blogspot.com/-V5ftoTq0Mc0/VzILss6SWsI/AAAAAAAAA6k/JFD0HOK1Wwsx-nE6b4t0MtVBzG-db3HjACLcB/s1600/2015-12-15_Daniel_Chai_023.jpg",
+         "major":"Cognitive Science B.S.",
+         "college": "University of California, San Diego",
+         "status":"0",
+         "summary": "Passionate and driven professional dedicated to raising awareness in the agriculture industry.  Over 10 years of experience in the industry looking to expand and educate others about opportunities in the field.",
+         "description":"My group's research tools harvest and synthesize examples to empower more people to design, program, learn, and create. Our experiments and research systems leverage real-world, web-scale usage to create practical theories for design."
+      }
+   ]
 }

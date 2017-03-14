@@ -13,14 +13,25 @@
 </head>
 
 <body>
-  <div class="jumbotron" id="indexJumbo">
-    <a href="/"><img class="img" id="logoImg"></a>
-    <center><h4>MentorMe</h4></center>
-    <center><p>Find a Mentor &middot; Find a Mentee </p></center>
-  </div>
+
+<div class="topnav" id="myTopnav">
+  <a href="/"><center><img src="../images/messageIcon.png" alt="Message image" class="mailimg_main"><font size="3"color="black"><b>Messages</b></font></a>
+</div>
+
+</br>
+</br>
+</br>
+</br>
+    <img src="../images/newMessage.png" alt="newMessage image" class="newMessage"></center>
+</br>
+</br>
+<!--     <div class="jumbotron" id="indexJumbo">
+      <a href="/"><img class="img" id="logoImg"></a>
+      <center><h4>MentorMe</h4></center>
+      <center><p class="tagline">Find a Mentor &middot; Find a Mentee </p></center>
+    </div> -->
 
    <div class="container">
-    <center><img src="../images/messageIcon.png" alt="Message image" class="mailimg_main"></center>
 
   {{#each messagesList}}
   <div class="project clearfix" id={{name}}>
@@ -33,7 +44,72 @@
   {{/each}}
 
 </div>
+
+<div class="sendList">
+   <button class="link">Cancel</button>
+   <hr style="visibility: hidden"></hr>
+   <center><h5>New Message</h5></center>
+<br>
+   <p id="toBox">
+     To:
+   </p>
+
+   <div class="sendProject" id=1 style="height: 55px">
+       <a href="" class = "thumbnail" style="height: 50px">
+         <img src="../images/head.jpg" class="profilepic2" style="height: 40px">
+         <p id="name1"></p>
+     </a>
+   </div>
+   <div class="sendProject" id=2 style="height: 55px">
+       <a href="" class = "thumbnail" style="height: 50px">
+         <img src="../images/head.jpg" class="profilepic2" style="height: 40px">
+         <p id="name2"></p>
+     </a>
+   </div>
+   <div class="sendProject" id=3 style="height: 55px">
+       <a href="" class = "thumbnail" style="height: 50px">
+         <img src="../images/head.jpg" class="profilepic2" style="height: 40px">
+         <p id="name3"></p>
+     </a>
+   </div>
+   <div class="sendProject" id=4 style="height: 55px">
+       <a href="" class = "thumbnail" style="height: 50px">
+         <img src="../images/head.jpg" class="profilepic2" style="height: 40px">
+         <p id="name4"></p>
+     </a>
+   </div>
+   <div class="sendProject" id=5 style="height: 55px">
+       <a href="" class = "thumbnail" style="height: 50px">
+         <img src="../images/head.jpg" class="profilepic2" style="height: 40px">
+         <p id="name5"></p>
+     </a>
+   </div>
+   <div class="sendProject" id=6 style="height: 55px">
+       <a href="" class = "thumbnail" style="height: 50px">
+         <img src="../images/head.jpg" class="profilepic2" style="height: 40px">
+         <p id="name6"></p>
+     </a>
+   </div>
+   <div class="sendProject" id=7 style="height: 55px">
+       <a href="" class = "thumbnail" style="height: 50px">
+         <img src="../images/head.jpg" class="profilepic2" style="height: 40px">
+         <p id="name7"></p>
+     </a>
+   </div>
+   <div class="sendProject" id=8 style="height: 55px">
+       <a href="" class = "thumbnail" style="height: 50px">
+         <img src="../images/head.jpg" class="profilepic2" style="height: 40px">
+         <p id="name8"></p>
+     </a>
+   </div>
+
+ </br>
+
 </div>
+
+
+<!-- View my Profile for Nav BAr
+<a href="../myProject/"><img alt="Profile image" class = "img" id="myProfile"></a> -->
 
 <!-- NAV STARTS HERE -->
 <div id="nav">

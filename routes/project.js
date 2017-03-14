@@ -20,14 +20,18 @@ exports.viewProject = function(req, res) {
 	} else {
 		var person = profiles[index];
 		var major = person.major;
+		var college = person.college;
 		var description = person.description;
+		var summary = person.summary;
 	}
 
 
 	res.render('project', {
 		'projectName': name,
 		'major': major,
-		'description': description
+		'college': college,
+		'description': description,
+		'summary': summary,
 	});
 }
 

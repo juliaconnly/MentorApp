@@ -18,43 +18,62 @@
     <![endif]-->
 </head>
 
+
+
+
 <body>
-    <!-- h1 through h6 are headers. The higher the number, the smaller the header -->
-    <!-- p means paragraph -->
-    <div class="jumbotron" id="indexJumbo">
+
+<div class="topnav" id="myTopnav">
+  <a href="../../project/{{viewmessageName}}"><center><img src="../../images/messageIcon.png" alt="Message image" class="mailimg_main"><font size="3"color="black"><b>{{viewmessageName}}</b></font></center></a>
+</div>
+
+<!--     <div class="jumbotron" id="indexJumbo">
       <a href="/"><img class="img" id="logoImg"></a>
       <center><h4>MentorMe</h4></center>
-      <center><p>Find a Mentor &middot; Find a Mentee </p></center>
-    </div>
+      <center><p class="tagline">Find a Mentor &middot; Find a Mentee </p></center>
+    </div> -->
 
-  <div class="container">
 
+<!-- </br>
     <center><h4>VIEW MESSAGE:</h4></center>
-    <hr>
+</br> -->
+<!-- </br>
+    <center><img src="../../images/messageIcon.png" alt="Message image" class="mailimg_main"></center>
+</br> -->
 
+</br>
+</br>
+</br>
+  <div class="container" id="viewContainer">
     <div class="project" id="reciever">
-      <a href="../../project/{{viewmessageName}}"><h5 style="float:left">{{viewmessageName}}</h5></a><a href="../../settings"><h5 style="float:right">Me</h5></a>
+      <a href="../../project/{{viewmessageName}}"><h5 style="float:left"><font size="3">{{viewmessageName}}</font></h5></a><a href="../../settings"><h5 style="float:right"><font size="3">Me</font></h5></a>
     </div>
 </br>
 </br>
-
+<div class="container" id="theirChat">
     <div class="message">
       <p id="theirMessage">{{message}}</p>
     </div>
+</div>
+</br>
+<div class="container" id="myChat">
     <div class="mymessage">
       <p id="myMessage">{{mymessage}}</p>
     </div>
-    <hr>
+</div>
+
+</br>
+<!-- <div class="container"> -->
     <div class="sentMessage">
-      <h3>Send Message</h3>
       <div class="sendBox">
         <input type="text" class="form-control" id="message" placeholder="Message" name="message">
-      <a href="#" id="submitBtn" class="btn btn-default" value="Send">Send</a>
+      <a href="#" id="submitBtn" class="btn btn-default" value="Send" style="float:right">Send</a>
       <div class="timeInput" id="mytime"></div>
       </div>
-    </div>
-
+<!--     </div> -->
 </div>
+  </div>
+
     <!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
     <!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
     <!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
@@ -83,6 +102,10 @@
       </a>
     </div>
     {{/each}} -->
+
+
+<!-- View my Profile for Nav BAr
+<a href="../../myProject/"><img alt="Profile image" class = "img" id="myProfile"></a> -->
 
 <!-- NAV STARTS HERE -->
 <div id="nav">

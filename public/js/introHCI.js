@@ -2,14 +2,14 @@
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
-	initializePage();
+	startPage();
 });
 
 var choice;
 /*
  * Function that is called when the document is ready.
  */
-function initializePage() {
+function startPage() {
 	// add any functionality and listeners you want here
 	console.log("Here");
 	$('.backimg').click(back);
@@ -31,6 +31,35 @@ function initializePage() {
 	$($('.item')[0]).addClass("active");
 	console.log("works");
 
+	$('#saveBtn').click(editProfile);
+
+}
+
+function editProfile() {
+	console.log("Here");
+	var name = $("#name").val();
+	var major = $("#major").val();
+	var description = $("#experience").val();
+	var college = $("#college").val();
+	var summary = $("#summary").val();
+	var button1 = document.getElementById("selectBtn");
+	var status = button1.innerText;
+	var data = {
+		"n": name,
+		"m": major,
+		"c": college,
+		"s": summary,
+		"d": description 
+	};
+
+	console.log(data);
+
+	$.ajax({
+		type: "POST",
+		url: "/myProject",
+		data: JSON.stringify(data),
+		dataType: "json"
+	});
 }
 
 function back() {

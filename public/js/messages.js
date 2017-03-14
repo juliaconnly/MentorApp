@@ -2,6 +2,7 @@
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
+  $('sendList').hide();
   initializePage();
 });
 
@@ -10,7 +11,9 @@ var messageName;
 function initializePage() {
   // $.get("/messages.json", setUpPage);
   console.log("messages.js");
+  $('.sendList').hide();
   $('.backimg').click(back);
+  $('.newMessage').click(getReceiver);
   $.get("/messages2", setUpPage);
   $.get("/sentMessages", setUpPage2);
   $('.project').click(notify);
@@ -20,6 +23,32 @@ function initializePage() {
       sendMessage(e);
     }
   });
+  $('.link').click(function(e) {
+    $('.sendList').hide();
+    $('.container').show();
+  });
+}
+
+function getReceiver(){
+  $('.container').hide();
+  $('.sendList').show();
+  $.get("/data.json", newMessage);
+}
+
+function newMessage(result) {
+  console.log(result);
+  var profiles = result['matchesList'];
+  for (var i =0; i < profiles.length; i++) {
+    var name = profiles[i].name;
+    $("#" + (i+1) + " .thumbnail").attr("href", "viewmessages/" + name);
+    var nameID = document.getElementById("name" + (i+1));
+    nameID.innerHTML = name;
+    $("#name"+(i+1)).css({
+      'color': 'black',
+      'font-size': '14px',
+      'font-weight': '500'
+    });
+  }
 }
 
 function back() {
