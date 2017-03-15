@@ -2,8 +2,15 @@
 	
 	"messagesList":
 	[
-		{"name": "Kaila Lee", "image": "http://mentorapp5.herokuapp.com/images/head.jpg", "notify": "one", "message": "Hey!"},
-		{"name": "Jenn Chan", "image": "http://mentorapp5.herokuapp.com/images/head.jpg", "notify": "zero", "message": "Hello."},
-		{"name": "Julia Connly", "image": "http://mentorapp5.herokuapp.com/images/head.jpg", "notify": "zero", "message": "How are you doing?"}
+		{"name": "John Doe", "image": "https://3.bp.blogspot.com/-V5ftoTq0Mc0/VzILss6SWsI/AAAAAAAAA6k/JFD0HOK1Wwsx-nE6b4t0MtVBzG-db3HjACLcB/s1600/2015-12-15_Daniel_Chai_023.jpg", "notify": "one", "message": "Hello! You seem like a great student. Would you like to meet at Price Center at 1pm tomorrow?"},
+		{"name": "Jenn Chan", "image": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAW7AAAAJDkwODNhM2Y4LTM5NTAtNDE5Zi1hNTAxLTc3N2Y0MzhlNTBmYw.jpg", "notify": "zero", "message": "Hello. How are you?"},
+		{"name": "Julia Connly", "image": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/2/005/085/212/0848072.jpg", "notify": "zero", "message": "How are you doing?"},
+		{"name": "Jane Doe", "image": "https://static01.nyt.com/images/2014/11/13/business/four-women-ceos-slide-SZ3E/four-women-ceos-slide-SZ3E-tmagSF-v3.png", "notify": "zero", "message": "Nice to meet you. How about meeting again next week?"},
+		{"name": "Kaila Lee", "image": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAATeAAAAJDA1NmQzOWI4LTVlN2YtNDhmZC1iZWMzLWU0MjgzMDc1ZWIyMw.jpg", "notify": "zero", "message": "Hello!"},
+		{"name": "Jenn Chan", "image": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAW7AAAAJDkwODNhM2Y4LTM5NTAtNDE5Zi1hNTAxLTc3N2Y0MzhlNTBmYw.jpg", "notify": "zero", "message": ""},
+		{"name": "Kobe Bryant", "image": "http://net.archbold.k12.oh.us/ahs/web_class/Spring_11/LALakers_WyseB/Images/Kobe%20Bryant1.jpg", "notify": "zero", "message": ""},
+		{"name": "Ellen Degeneres", "image": "http://hgtvhome.sndimg.com/content/dam/images/hgtv/editorial/profiles/talent/ellen-degeneres/hgtv-avatar-talent-ellen-degeneres-3.jpg.rend.hgtvcom.616.616.jpeg", "notify": "zero", "message": ""},
+		{"name": "Steph Curry", "image": "https://az616578.vo.msecnd.net/files/responsive/cover/main/desktop/2016/05/15/635989279751597688-871060012_curry.jpeg", "notify": "zero", "message": ""}
 	]
 }
+

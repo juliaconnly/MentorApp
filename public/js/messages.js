@@ -61,6 +61,10 @@ function setUpPage(result) {
   for (var i = 0; i < messagesArray.length; i++) {
     var theirName = messagesArray[i].name;
     var name = theirName.split(' ')[0];
+    console.log(theirName);
+    if (messagesArray[i].message == "") {
+      $("#" + theirName).hide();
+    }
      if (messagesArray[i].notify == "zero") {
       // console.log("Here");
       $(".mailimg").attr("src", "../../newMessageIcon.png");

@@ -23,6 +23,7 @@ exports.viewProject = function(req, res) {
 		var college = person.college;
 		var description = person.description;
 		var summary = person.summary;
+		var image = person.image;
 	}
 
 
@@ -32,6 +33,7 @@ exports.viewProject = function(req, res) {
 		'college': college,
 		'description': description,
 		'summary': summary,
+		'image': image
 	});
 }
 

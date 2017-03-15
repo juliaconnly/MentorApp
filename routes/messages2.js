@@ -5,11 +5,11 @@ exports.viewMessages = function(req, res) {
 	//controller code goes here
 	var messages = bigData.messagesList;
 
-	for (var i=0; i < messages.length; i++) {
-		if (messages[i].message == "") {
-			bigData.messagesList.splice(i,1);
-		}
-	}
+	// for (var i=0; i < messages.length; i++) {
+	// 	if (messages[i].message == "") {
+	// 		bigData.messagesList.splice(i,1);
+	// 	}
+	// }
 	
 	res.json(bigData);
 	// res.json(sentData);

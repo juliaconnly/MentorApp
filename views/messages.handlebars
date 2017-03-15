@@ -16,30 +16,40 @@
 
 <div class="topnav" id="myTopnav">
   <a href="/"><center><img src="../images/messageIcon.png" alt="Message image" class="mailimg_main"><font size="3"color="black"><b>Messages</b></font></a>
+  <img src="../images/newMessage.png" alt="newMessage image" class="newMessage">
 </div>
 
 </br>
 </br>
 </br>
-</br>
-    <img src="../images/newMessage.png" alt="newMessage image" class="newMessage"></center>
-</br>
-</br>
+
 <!--     <div class="jumbotron" id="indexJumbo">
       <a href="/"><img class="img" id="logoImg"></a>
       <center><h4>MentorMe</h4></center>
       <center><p class="tagline">Find a Mentor &middot; Find a Mentee </p></center>
     </div> -->
 
-   <div class="container">
-
+   <div class="container" style="height: 600px">
   {{#each messagesList}}
-  <div class="project clearfix" id={{name}}>
-    <a href="viewmessages/{{name}}" class="thumbnail" id="inbox">
+  <div class="project" id="{{name}}">
+    <div class="container" id="inboxContainer">
+    <a href="viewmessages/{{name}}"  id="inbox">
+
+
+<!--                 <div class="avatar">
+                    <a href="project/{{name}}" class="thumbnail" style="float:left"><img src="{{image}}" alt="" /></a>
+                </div> -->
+
+    <div class="avatar" id="messageAvatar">
+
       <img src="{{image}}" class="profilepic" style="float:left">
+    </div>
+
       <p id="messageName">{{name}}</p>
       <p id="messageM">{{message}}</p>
+<!-- </br> -->
     </a>
+  </div>
   </div>
   {{/each}}
 
@@ -56,49 +66,49 @@
 
    <div class="sendProject" id=1 style="height: 55px">
        <a href="" class = "thumbnail" style="height: 50px">
-         <img src="../images/head.jpg" class="profilepic2" style="height: 40px">
+         <img src="{{image}}" class="profilepic2" style="height: 40px">
          <p id="name1"></p>
      </a>
    </div>
    <div class="sendProject" id=2 style="height: 55px">
        <a href="" class = "thumbnail" style="height: 50px">
-         <img src="../images/head.jpg" class="profilepic2" style="height: 40px">
+         <img src="{{image}}" class="profilepic2" style="height: 40px">
          <p id="name2"></p>
      </a>
    </div>
    <div class="sendProject" id=3 style="height: 55px">
        <a href="" class = "thumbnail" style="height: 50px">
-         <img src="../images/head.jpg" class="profilepic2" style="height: 40px">
+         <img src="{{image}}" class="profilepic2" style="height: 40px">
          <p id="name3"></p>
      </a>
    </div>
    <div class="sendProject" id=4 style="height: 55px">
        <a href="" class = "thumbnail" style="height: 50px">
-         <img src="../images/head.jpg" class="profilepic2" style="height: 40px">
+         <img src="{{image}}" class="profilepic2" style="height: 40px">
          <p id="name4"></p>
      </a>
    </div>
    <div class="sendProject" id=5 style="height: 55px">
        <a href="" class = "thumbnail" style="height: 50px">
-         <img src="../images/head.jpg" class="profilepic2" style="height: 40px">
+         <img src="{{image}}" class="profilepic2" style="height: 40px">
          <p id="name5"></p>
      </a>
    </div>
    <div class="sendProject" id=6 style="height: 55px">
        <a href="" class = "thumbnail" style="height: 50px">
-         <img src="../images/head.jpg" class="profilepic2" style="height: 40px">
+         <img src="{{image}}" class="profilepic2" style="height: 40px">
          <p id="name6"></p>
      </a>
    </div>
    <div class="sendProject" id=7 style="height: 55px">
        <a href="" class = "thumbnail" style="height: 50px">
-         <img src="../images/head.jpg" class="profilepic2" style="height: 40px">
+         <img src="{{image}}" class="profilepic2" style="height: 40px">
          <p id="name7"></p>
      </a>
    </div>
    <div class="sendProject" id=8 style="height: 55px">
        <a href="" class = "thumbnail" style="height: 50px">
-         <img src="../images/head.jpg" class="profilepic2" style="height: 40px">
+         <img src="{{image}}" class="profilepic2" style="height: 40px">
          <p id="name8"></p>
      </a>
    </div>
@@ -118,6 +128,7 @@
 <li><a href="/"><img src="../images/homeicon.png" alt="Home image" class="homeimg"></a></li>
 <li><a href=""><img src="../images/messageIcon.png" alt="Message image" class="mailimg"></a></li>
 <li><a href="../settings/"><img src="../images/settings.png" alt="Settings image" class="settingsimg"></a></li>
+<li><a href="../myProject/"><img src="../images/profile.png" alt="Settings image" class="settingsimg"></a></li>
 <li><a href="../FAQ/">FAQ</a></li>
 
 </div>
