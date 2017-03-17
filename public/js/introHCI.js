@@ -42,8 +42,8 @@ function editProfile() {
 	var description = $("#experience").val();
 	var college = $("#college").val();
 	var summary = $("#summary").val();
-	var button1 = document.getElementById("selectBtn");
-	var status = button1.innerText;
+	var button2 = document.getElementById("selectBtn2");
+	var status = button2.innerText;
 	var data = {
 		"n": name,
 		"m": major,
@@ -113,6 +113,18 @@ $('#mentor').click(function(e) {
 
 $('#mentee').click(function(e) {
 	var button1 = document.getElementById("selectBtn");
+	button1.innerText = "Mentee";
+});
+
+
+
+$('#mentor2').click(function(e) {
+	var button1 = document.getElementById("selectBtn2");
+	button1.innerText = "Mentor";
+});
+
+$('#mentee2').click(function(e) {
+	var button1 = document.getElementById("selectBtn2");
 	button1.innerText = "Mentee";
 });
 

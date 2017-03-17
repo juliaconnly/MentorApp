@@ -36,13 +36,7 @@ exports.editMessages = function(req, res) {
 		//loop through json data
 		for (var j = 0; j < messages.length; j++) {
 			if (messages[j].name == name) {
-				var newData = {
-					name: name,
-					image: "http://mentorapp5.herokuapp.com/images/head.jpg",
-					notify: "one",
-					message: messages[j].message
-				};
-				bigData.messagesList.splice(j, 1, newData);
+				messages[j].notify = "one";
 				// console.log(bigData.messagesList);
 				break;
 			}

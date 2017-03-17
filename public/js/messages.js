@@ -7,6 +7,7 @@ $(document).ready(function() {
 });
 
 var messageName;
+var messagesArray;
 
 function initializePage() {
   // $.get("/messages.json", setUpPage);
@@ -40,7 +41,9 @@ function newMessage(result) {
   var profiles = result['matchesList'];
   for (var i =0; i < profiles.length; i++) {
     var name = profiles[i].name;
+    var image = profiles[i].image;
     $("#" + (i+1) + " .thumbnail").attr("href", "viewmessages/" + name);
+    $("#" + (i+1) + " .profilepic2").attr("src", image);
     var nameID = document.getElementById("name" + (i+1));
     nameID.innerHTML = name;
     $("#name"+(i+1)).css({
@@ -56,47 +59,30 @@ function back() {
 }
 
 function setUpPage(result) {
-  var messagesArray = result['messagesList'];
+  messagesArray = result['messagesList'];
   console.log(result);
   for (var i = 0; i < messagesArray.length; i++) {
-    var theirName = messagesArray[i].name;
-    var name = theirName.split(' ')[0];
-    console.log(theirName);
-    if (messagesArray[i].message == "") {
-      $("#" + theirName).hide();
-    }
-     if (messagesArray[i].notify == "zero") {
-      // console.log("Here");
+
+    if (messagesArray[i].notify == "zero") {
       $(".mailimg").attr("src", "../../newMessageIcon.png");
-      // $("#" + name + " #inbox").css({
-      //  'background-color': '#F8FBFB'
-      // });
-      $("#" + name + " #messageM").css({
-        'color': 'black',
-        'font-weight': 'bold',
-        'font-size': '14px'
-      });
-    } else {
-      $("#" + name + " #messageM").css({
-        'color': 'black',
-        'font-size': '12px'
-      });
     }
   }
 }
 
 function setUpPage2(result) {
-  var sentArray = result['sentList'];
-  var receiver;
-  var name;
-  for (var i = 0; i < sentArray.length; i++) {
-    if (sentArray[i].message == "") {
-      continue;
+  messageName = document.getElementById("viewmessageName").innerHTML;
+  var theirMessage = document.getElementById("theirMessage").innerHTML;
+  if (theirMessage == "") {
+    $("#theirChat").hide();
+  }
+  var sentList = result['sentList'];
+  for (var i = 0; i < sentList.length; i++) {
+    if (sentList[i].receiver == messageName) {
+      if (sentList[i].message == "") {
+        $("#myChat").hide();
+        break;
+      }
     }
-      receiver = sentArray[i].receiver;
-      name = receiver.split(' ')[0];
-      $("#" + name + " #messageM").html(sentArray[i].message);
-
   }
 }
 
@@ -111,14 +97,10 @@ function updateNotify(result) {
   console.log("updateNotify");
   var messages = result['messagesList'];
   for (var i = 0; i < messages.length; i++) {
-    var name = messages[i].name.split(' ')[0];
+    var name = messages[i].name;
     if (name == messageName) {
-      var fullName = messages[i].name;
-      var pic = messages[i].image;
-      var message = messages[i].message;
-
       var data = {
-        "name": fullName
+        "name":name
       };
       $.ajax({
         type: "POST",
@@ -129,7 +111,6 @@ function updateNotify(result) {
       break;
     }
   }
-  var parameters = {};
   $.get("/messages2", newCallBack);
   // $.get("/messages.json", newCallBack);
   // console.log(messages[1].notify);
